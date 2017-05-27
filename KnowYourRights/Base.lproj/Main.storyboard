@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--First-->
+        <!--YourRights-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="YourRights" id="9pv-A4-QxB" customClass="YourRightsViewController" customModule="KnowYourRights" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
@@ -17,36 +22,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by FirstViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R1a-Iq-bv7">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="oGd-mT-6RL"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Your Rights" id="Ekw-Ef-QnW"/>
+                                </items>
+                            </navigationBar>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wTR-eY-acE">
+                                <rect key="frame" x="0.0" y="64" width="375" height="50"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="mNQ-9O-Kjp"/>
+                                </constraints>
+                                <dataDetectorType key="dataDetectorTypes"/>
+                            </webView>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="75Z-ee-VdP">
+                                <rect key="frame" x="0.0" y="114" width="375" height="504"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="8" symbolic="YES" id="cfb-er-3JN"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="e1l-AV-tCB"/>
-                            <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
+                            <constraint firstItem="wTR-eY-acE" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="0Vg-gX-ycv"/>
+                            <constraint firstItem="wTR-eY-acE" firstAttribute="width" secondItem="tsR-hK-woN" secondAttribute="width" id="56P-VU-GUs"/>
+                            <constraint firstItem="75Z-ee-VdP" firstAttribute="width" secondItem="tsR-hK-woN" secondAttribute="width" id="6F3-6h-ywH"/>
+                            <constraint firstItem="75Z-ee-VdP" firstAttribute="top" secondItem="wTR-eY-acE" secondAttribute="bottom" id="K6S-Dd-aVx"/>
+                            <constraint firstItem="R1a-Iq-bv7" firstAttribute="width" secondItem="tsR-hK-woN" secondAttribute="width" id="PSJ-9w-48F"/>
+                            <constraint firstItem="75Z-ee-VdP" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="f6s-AS-Z51"/>
+                            <constraint firstItem="R1a-Iq-bv7" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="gDx-ye-NZX"/>
+                            <constraint firstItem="wTR-eY-acE" firstAttribute="top" secondItem="R1a-Iq-bv7" secondAttribute="bottom" id="jaO-ss-EWG"/>
+                            <constraint firstItem="R1a-Iq-bv7" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" id="u8H-t4-anx"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="75Z-ee-VdP" secondAttribute="bottom" id="x3W-9C-Ia0"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Your RIghts" image="YourRights" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="languageView" destination="wTR-eY-acE" id="W9o-ZX-3Nr"/>
+                        <outlet property="webView" destination="75Z-ee-VdP" id="0i3-CF-5Xg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="-320"/>
+            <point key="canvasLocation" x="788" y="-493"/>
         </scene>
-        <!--Second-->
+        <!--Hotline-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Hotline" id="8rJ-Kc-sve" customClass="HotlineViewController" customModule="KnowYourRights" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
@@ -55,31 +80,85 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MMM-ew-gUV">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Hotline" id="oc5-4j-q4L"/>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="og8-Hz-JIT">
+                                <rect key="frame" x="80" y="252" width="215" height="67"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <state key="normal" title="Call NAKASEC (Korean/English)"/>
+                                <connections>
+                                    <action selector="callNakasecButtonClicked:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="9VO-fT-IWI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4qo-nY-8By">
+                                <rect key="frame" x="50" y="360" width="274" height="67"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <state key="normal" title="Call United We Dream (English/Spanish)"/>
+                                <connections>
+                                    <action selector="callUwdButtonClicked:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="uoc-r8-FOU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" symbolic="YES" id="Day-4N-Vmt"/>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="JgO-Fn-dHn"/>
-                            <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
-                            <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
-                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Hotline" image="Hotline" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="callNakasecButton" destination="og8-Hz-JIT" id="cjo-mj-b11"/>
+                        <outlet property="callUwdButton" destination="4qo-nY-8By" id="3S7-Sk-pu4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="360"/>
+            <point key="canvasLocation" x="749.60000000000002" y="359.37031484257875"/>
+        </scene>
+        <!--ToOfficers-->
+        <scene sceneID="PPF-AZ-mIe">
+            <objects>
+                <viewController title="ToOfficers" id="pDf-vi-oum" customClass="ToOfficersViewController" customModule="KnowYourRights" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AV7-UG-x7a"/>
+                        <viewControllerLayoutGuide type="bottom" id="qtG-aR-yTZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="agz-yb-bOw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="plA-5W-Ayc">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="To Officers" id="qud-qi-AYr"/>
+                                </items>
+                            </navigationBar>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aZw-Ae-TM3">
+                                <rect key="frame" x="16" y="64" width="351" height="554"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <dataDetectorType key="dataDetectorTypes"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="aZw-Ae-TM3" secondAttribute="trailingMargin" id="16y-FK-w25"/>
+                            <constraint firstItem="aZw-Ae-TM3" firstAttribute="leading" secondItem="agz-yb-bOw" secondAttribute="leadingMargin" id="9Hj-2g-QoH"/>
+                            <constraint firstItem="plA-5W-Ayc" firstAttribute="leading" secondItem="agz-yb-bOw" secondAttribute="leading" id="Gg9-Nx-llM"/>
+                            <constraint firstItem="qtG-aR-yTZ" firstAttribute="top" secondItem="aZw-Ae-TM3" secondAttribute="bottom" id="Kew-eb-eqG"/>
+                            <constraint firstItem="plA-5W-Ayc" firstAttribute="top" secondItem="AV7-UG-x7a" secondAttribute="bottom" id="YDB-jn-Ko1"/>
+                            <constraint firstItem="plA-5W-Ayc" firstAttribute="width" secondItem="agz-yb-bOw" secondAttribute="width" id="cUM-Vb-oj5"/>
+                            <constraint firstItem="aZw-Ae-TM3" firstAttribute="top" secondItem="plA-5W-Ayc" secondAttribute="bottom" id="kcc-O4-oHw"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="To Officers" image="ToOfficers" id="xDY-jd-eHI"/>
+                    <connections>
+                        <outlet property="webView" destination="aZw-Ae-TM3" id="Lzo-vJ-wHF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lyF-YB-v2y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="93.599999999999994" y="880.20989505247383"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -94,6 +173,7 @@
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="pDf-vi-oum" kind="relationship" relationship="viewControllers" id="BSm-pl-N3k"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -102,7 +182,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="Hotline" width="25" height="25"/>
+        <image name="ToOfficers" width="25" height="25"/>
+        <image name="YourRights" width="25" height="25"/>
     </resources>
 </document>

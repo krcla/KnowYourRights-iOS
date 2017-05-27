@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		5AF4E7621EBE72A600523531 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF4E7611EBE72A600523531 /* AppDelegate.swift */; };
-		5AF4E7641EBE72A600523531 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF4E7631EBE72A600523531 /* FirstViewController.swift */; };
-		5AF4E7661EBE72A600523531 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF4E7651EBE72A600523531 /* SecondViewController.swift */; };
+		5AF4E7641EBE72A600523531 /* YourRightsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF4E7631EBE72A600523531 /* YourRightsViewController.swift */; };
+		5AF4E7661EBE72A600523531 /* HotlineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF4E7651EBE72A600523531 /* HotlineViewController.swift */; };
 		5AF4E7691EBE72A600523531 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AF4E7671EBE72A600523531 /* Main.storyboard */; };
 		5AF4E76B1EBE72A600523531 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AF4E76A1EBE72A600523531 /* Assets.xcassets */; };
 		5AF4E76E1EBE72A600523531 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AF4E76C1EBE72A600523531 /* LaunchScreen.storyboard */; };
 		5AF4E7791EBE72A700523531 /* KnowYourRightsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF4E7781EBE72A700523531 /* KnowYourRightsTests.swift */; };
 		5AF4E7841EBE72A700523531 /* KnowYourRightsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF4E7831EBE72A700523531 /* KnowYourRightsUITests.swift */; };
+		5AF4E7921EBE7AAA00523531 /* ToOfficersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF4E7911EBE7AAA00523531 /* ToOfficersViewController.swift */; };
+		5AFE946D1EC77676004693C5 /* Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5AFE946C1EC77675004693C5 /* Resources.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +39,8 @@
 /* Begin PBXFileReference section */
 		5AF4E75E1EBE72A600523531 /* KnowYourRights.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KnowYourRights.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AF4E7611EBE72A600523531 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5AF4E7631EBE72A600523531 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		5AF4E7651EBE72A600523531 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		5AF4E7631EBE72A600523531 /* YourRightsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourRightsViewController.swift; sourceTree = "<group>"; };
+		5AF4E7651EBE72A600523531 /* HotlineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotlineViewController.swift; sourceTree = "<group>"; };
 		5AF4E7681EBE72A600523531 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5AF4E76A1EBE72A600523531 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5AF4E76D1EBE72A600523531 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		5AF4E77F1EBE72A700523531 /* KnowYourRightsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KnowYourRightsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AF4E7831EBE72A700523531 /* KnowYourRightsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowYourRightsUITests.swift; sourceTree = "<group>"; };
 		5AF4E7851EBE72A700523531 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AF4E7911EBE7AAA00523531 /* ToOfficersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToOfficersViewController.swift; sourceTree = "<group>"; };
+		5AFE946C1EC77675004693C5 /* Resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Resources.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +103,11 @@
 		5AF4E7601EBE72A600523531 /* KnowYourRights */ = {
 			isa = PBXGroup;
 			children = (
+				5AFE946C1EC77675004693C5 /* Resources.bundle */,
 				5AF4E7611EBE72A600523531 /* AppDelegate.swift */,
-				5AF4E7631EBE72A600523531 /* FirstViewController.swift */,
-				5AF4E7651EBE72A600523531 /* SecondViewController.swift */,
+				5AF4E7631EBE72A600523531 /* YourRightsViewController.swift */,
+				5AF4E7651EBE72A600523531 /* HotlineViewController.swift */,
+				5AF4E7911EBE7AAA00523531 /* ToOfficersViewController.swift */,
 				5AF4E7671EBE72A600523531 /* Main.storyboard */,
 				5AF4E76A1EBE72A600523531 /* Assets.xcassets */,
 				5AF4E76C1EBE72A600523531 /* LaunchScreen.storyboard */,
@@ -196,6 +202,7 @@
 				TargetAttributes = {
 					5AF4E75D1EBE72A600523531 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 92RDWDR8BN;
 						ProvisioningStyle = Automatic;
 					};
 					5AF4E7731EBE72A700523531 = {
@@ -238,6 +245,7 @@
 				5AF4E76E1EBE72A600523531 /* LaunchScreen.storyboard in Resources */,
 				5AF4E76B1EBE72A600523531 /* Assets.xcassets in Resources */,
 				5AF4E7691EBE72A600523531 /* Main.storyboard in Resources */,
+				5AFE946D1EC77676004693C5 /* Resources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,9 +270,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5AF4E7661EBE72A600523531 /* SecondViewController.swift in Sources */,
+				5AF4E7921EBE7AAA00523531 /* ToOfficersViewController.swift in Sources */,
+				5AF4E7661EBE72A600523531 /* HotlineViewController.swift in Sources */,
 				5AF4E7621EBE72A600523531 /* AppDelegate.swift in Sources */,
-				5AF4E7641EBE72A600523531 /* FirstViewController.swift in Sources */,
+				5AF4E7641EBE72A600523531 /* YourRightsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +427,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 92RDWDR8BN;
 				INFOPLIST_FILE = KnowYourRights/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.nakasec.KnowYourRights;
@@ -430,6 +440,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 92RDWDR8BN;
 				INFOPLIST_FILE = KnowYourRights/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.nakasec.KnowYourRights;
@@ -511,6 +522,7 @@
 				5AF4E78A1EBE72A700523531 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5AF4E78B1EBE72A700523531 /* Build configuration list for PBXNativeTarget "KnowYourRightsTests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +531,7 @@
 				5AF4E78D1EBE72A700523531 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5AF4E78E1EBE72A700523531 /* Build configuration list for PBXNativeTarget "KnowYourRightsUITests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +540,7 @@
 				5AF4E7901EBE72A700523531 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
