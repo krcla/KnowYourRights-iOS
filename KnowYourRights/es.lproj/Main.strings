@@ -1,0 +1,39 @@
+
+/* Class = "UIButton"; normalTitle = "1-844-363-1423"; ObjectID = "4qo-nY-8By"; */
+"4qo-nY-8By.normalTitle" = "1-844-363-1423";
+
+/* Class = "UIViewController"; title = "Hotline"; ObjectID = "8rJ-Kc-sve"; */
+"8rJ-Kc-sve.title" = "Línea Directa";
+
+/* Class = "UIViewController"; title = "Your Rights"; ObjectID = "9pv-A4-QxB"; */
+"9pv-A4-QxB.title" = "Sus Derechos";
+
+/* Class = "UINavigationItem"; title = "Your Rights"; ObjectID = "Ekw-Ef-QnW"; */
+"Ekw-Ef-QnW.title" = "Sus Derechos";
+
+/* Class = "UITabBarItem"; title = "Your Rights"; ObjectID = "acW-dT-cKf"; */
+"acW-dT-cKf.title" = "Sus Derechos";
+
+/* Class = "UITabBarItem"; title = "Hotline"; ObjectID = "cPa-gy-q4n"; */
+"cPa-gy-q4n.title" = "Línea Directa";
+
+/* Class = "UINavigationItem"; title = "Hotline"; ObjectID = "oc5-4j-q4L"; */
+"oc5-4j-q4L.title" = "Línea Directa";
+
+/* Class = "UIButton"; normalTitle = "1-844-500-3222"; ObjectID = "og8-Hz-JIT"; */
+"og8-Hz-JIT.normalTitle" = "1-844-500-3222";
+
+/* Class = "UIViewController"; title = "To Officers"; ObjectID = "pDf-vi-oum"; */
+"pDf-vi-oum.title" = "A Los Oficiales";
+
+/* Class = "UINavigationItem"; title = "To Officers"; ObjectID = "qud-qi-AYr"; */
+"qud-qi-AYr.title" = "A Los Oficiales";
+
+/* Class = "UITabBarItem"; title = "To Officers"; ObjectID = "xDY-jd-eHI"; */
+"xDY-jd-eHI.title" = "A Los Oficiales";
+
+/* Class = "UIButton"; normalTitle = "Call NAKASEC (Korean/English)"; ObjectID = "TZh-3E-XUf"; */
+"TZh-3E-XUf.normalTitle" = "NAKASEC (Inglés/Coreano)";
+
+/* Class = "UIButton"; normalTitle = "Call United We Dream (English/Spanish)"; ObjectID = "XlC-j2-UAk"; */
+"XlC-j2-UAk.normalTitle" = "United We Dream (Español/Inglés)";
