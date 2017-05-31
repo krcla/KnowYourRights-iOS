@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "2CEDEA46B89BF61AEF8835531221A0D7AADFC66B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "2CB82A66514E6C20A0AFF0EA3202EE31D5C826B3" : 9223372036854775807,
+    "2CEDEA46B89BF61AEF8835531221A0D7AADFC66B" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "BEA94C10-FABE-447E-A880-2419C79DD4BC",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "2CB82A66514E6C20A0AFF0EA3202EE31D5C826B3" : "KnowYourRights\/StudioProjects\/KnowYourRightsApp\/",
+    "2CEDEA46B89BF61AEF8835531221A0D7AADFC66B" : "KnowYourRights\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "KnowYourRights",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "KnowYourRights.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/krcla\/KnowYourRightsApp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2CB82A66514E6C20A0AFF0EA3202EE31D5C826B3"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/krcla\/KnowYourRights-iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2CEDEA46B89BF61AEF8835531221A0D7AADFC66B"
+    }
+  ]
+}

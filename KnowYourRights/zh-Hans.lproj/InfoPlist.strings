@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  KnowYourRights
+
+  Created by ZUWHAN KIM on 5/30/17.
+  Copyright © 2017 ZUWHAN KIM. All rights reserved.
+*/
+"CFBundleDisplayName" = "了解你的权利";
+"NSHumanReadableCopyright" = "2017 Korean Resource Center. All rights reserved.";

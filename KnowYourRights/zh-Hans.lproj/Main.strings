@@ -11,6 +11,12 @@
 /* Class = "UINavigationItem"; title = "Your Rights"; ObjectID = "Ekw-Ef-QnW"; */
 "Ekw-Ef-QnW.title" = "你的权利";
 
+/* Class = "UITextField"; text = "Call NAKASEC (Korean/English)"; ObjectID = "TZh-3E-XUf"; */
+"TZh-3E-XUf.text" = "呼叫 NAKASEC (英语/朝鲜语)";
+
+/* Class = "UITextField"; text = "Call United We Dream (English/Spanish)"; ObjectID = "XlC-j2-UAk"; */
+"XlC-j2-UAk.text" = "呼叫 United We Dream (英语/西班牙语)";
+
 /* Class = "UITabBarItem"; title = "Your Rights"; ObjectID = "acW-dT-cKf"; */
 "acW-dT-cKf.title" = "你的权利";
 
@@ -31,9 +37,3 @@
 
 /* Class = "UITabBarItem"; title = "To Officers"; ObjectID = "xDY-jd-eHI"; */
 "xDY-jd-eHI.title" = "致警官";
-
-/* Class = "UIButton"; normalTitle = "Call NAKASEC (Korean/English)"; ObjectID = "TZh-3E-XUf"; */
-"TZh-3E-XUf.normalTitle" = "呼叫 NAKASEC (英语/朝鲜语)";
-
-/* Class = "UIButton"; normalTitle = "Call United We Dream (English/Spanish)"; ObjectID = "XlC-j2-UAk"; */
-"XlC-j2-UAk.normalTitle" = "呼叫 United We Dream (英语/西班牙语)";

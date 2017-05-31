@@ -20,6 +20,7 @@ class ToOfficersViewController: UIViewController, UIWebViewDelegate {
         let requestUrl = URL(fileURLWithPath: filePath!)
         let myRequest = URLRequest(url: requestUrl)
         webView.loadRequest(myRequest)
+        webView.delegate = self
         self.view.addSubview(webView)
     }
     

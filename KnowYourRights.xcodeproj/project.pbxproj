@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5AC03BF31EDE7BEF004018A4 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC03BF21EDE7BEF004018A4 /* AboutViewController.swift */; };
+		5AEBF4471EDE740900C349F5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5AEBF4451EDE740900C349F5 /* InfoPlist.strings */; };
 		5AF4E7621EBE72A600523531 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF4E7611EBE72A600523531 /* AppDelegate.swift */; };
 		5AF4E7641EBE72A600523531 /* YourRightsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF4E7631EBE72A600523531 /* YourRightsViewController.swift */; };
 		5AF4E7661EBE72A600523531 /* HotlineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF4E7651EBE72A600523531 /* HotlineViewController.swift */; };
@@ -41,10 +43,17 @@
 		5A882FCA1EDD2CC0006DD0C0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		5A882FCB1EDD2CCF006DD0C0 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 		5A882FCC1EDD2CD0006DD0C0 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		5A882FCD1EDD2CDA006DD0C0 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Main.strings; sourceTree = "<group>"; };
 		5A882FCE1EDD2CDD006DD0C0 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		5A882FCF1EDD2D04006DD0C0 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Main.strings; sourceTree = "<group>"; };
 		5A882FD01EDD2D04006DD0C0 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		5AC03BF21EDE7BEF004018A4 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		5AEBF4381EDE65DE00C349F5 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Main.strings; sourceTree = "<group>"; };
+		5AEBF43F1EDE67DF00C349F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/Info.plist; sourceTree = "<group>"; };
+		5AEBF4461EDE740900C349F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = KnowYourRights/Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5AEBF4481EDE745800C349F5 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = KnowYourRights/ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5AEBF4491EDE745E00C349F5 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = KnowYourRights/pt.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5AEBF44A1EDE745F00C349F5 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = KnowYourRights/es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5AEBF44B1EDE746000C349F5 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "KnowYourRights/zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		5AF4E75E1EBE72A600523531 /* KnowYourRights.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KnowYourRights.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AF4E7611EBE72A600523531 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5AF4E7631EBE72A600523531 /* YourRightsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourRightsViewController.swift; sourceTree = "<group>"; };
@@ -52,7 +61,6 @@
 		5AF4E7681EBE72A600523531 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5AF4E76A1EBE72A600523531 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5AF4E76D1EBE72A600523531 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		5AF4E76F1EBE72A600523531 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5AF4E7741EBE72A700523531 /* KnowYourRightsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KnowYourRightsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AF4E7781EBE72A700523531 /* KnowYourRightsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowYourRightsTests.swift; sourceTree = "<group>"; };
 		5AF4E77A1EBE72A700523531 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -91,6 +99,7 @@
 		5AF4E7551EBE72A600523531 = {
 			isa = PBXGroup;
 			children = (
+				5AEBF4451EDE740900C349F5 /* InfoPlist.strings */,
 				5AF4E7601EBE72A600523531 /* KnowYourRights */,
 				5AF4E7771EBE72A700523531 /* KnowYourRightsTests */,
 				5AF4E7821EBE72A700523531 /* KnowYourRightsUITests */,
@@ -112,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				5AFE946C1EC77675004693C5 /* Resources.bundle */,
+				5AC03BF21EDE7BEF004018A4 /* AboutViewController.swift */,
 				5AF4E7611EBE72A600523531 /* AppDelegate.swift */,
 				5AF4E7631EBE72A600523531 /* YourRightsViewController.swift */,
 				5AF4E7651EBE72A600523531 /* HotlineViewController.swift */,
@@ -119,7 +129,7 @@
 				5AF4E7671EBE72A600523531 /* Main.storyboard */,
 				5AF4E76A1EBE72A600523531 /* Assets.xcassets */,
 				5AF4E76C1EBE72A600523531 /* LaunchScreen.storyboard */,
-				5AF4E76F1EBE72A600523531 /* Info.plist */,
+				5AEBF43A1EDE676800C349F5 /* Info.plist */,
 			);
 			path = KnowYourRights;
 			sourceTree = "<group>";
@@ -232,6 +242,10 @@
 			knownRegions = (
 				en,
 				Base,
+				ko,
+				es,
+				pt,
+				"zh-Hans",
 			);
 			mainGroup = 5AF4E7551EBE72A600523531;
 			productRefGroup = 5AF4E75F1EBE72A600523531 /* Products */;
@@ -254,6 +268,7 @@
 				5AF4E76B1EBE72A600523531 /* Assets.xcassets in Resources */,
 				5AF4E7691EBE72A600523531 /* Main.storyboard in Resources */,
 				5AFE946D1EC77676004693C5 /* Resources.bundle in Resources */,
+				5AEBF4471EDE740900C349F5 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +296,7 @@
 				5AF4E7921EBE7AAA00523531 /* ToOfficersViewController.swift in Sources */,
 				5AF4E7661EBE72A600523531 /* HotlineViewController.swift in Sources */,
 				5AF4E7621EBE72A600523531 /* AppDelegate.swift in Sources */,
+				5AC03BF31EDE7BEF004018A4 /* AboutViewController.swift in Sources */,
 				5AF4E7641EBE72A600523531 /* YourRightsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,14 +333,34 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		5AEBF43A1EDE676800C349F5 /* Info.plist */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5AEBF43F1EDE67DF00C349F5 /* Base */,
+			);
+			name = Info.plist;
+			sourceTree = "<group>";
+		};
+		5AEBF4451EDE740900C349F5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5AEBF4461EDE740900C349F5 /* Base */,
+				5AEBF4481EDE745800C349F5 /* ko */,
+				5AEBF4491EDE745E00C349F5 /* pt */,
+				5AEBF44A1EDE745F00C349F5 /* es */,
+				5AEBF44B1EDE746000C349F5 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		5AF4E7671EBE72A600523531 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				5AF4E7681EBE72A600523531 /* Base */,
 				5A882FC91EDD2CB6006DD0C0 /* zh-Hans */,
 				5A882FCB1EDD2CCF006DD0C0 /* es */,
-				5A882FCD1EDD2CDA006DD0C0 /* ko */,
 				5A882FCF1EDD2D04006DD0C0 /* pt */,
+				5AEBF4381EDE65DE00C349F5 /* ko */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
