@@ -19,6 +19,7 @@ class YourRightsViewController: UIViewController, UIWebViewDelegate {
         loadView(view: languageView, htmlFile: "your_rights_languages")
         languageView.delegate = self
 
+        locale = (Locale.current as NSLocale).object(forKey: .languageCode) as! String
         loadInstructionView()
         webView.delegate = self
     }
@@ -30,21 +31,14 @@ class YourRightsViewController: UIViewController, UIWebViewDelegate {
     
     func loadInstructionView() {
         var htmlFile = "your_rights_en"
-        switch locale {
-        case "es_US":
+        if (locale.hasPrefix("es")) {
             htmlFile = "your_rights_es"
-            break
-        case "ko_KR":
+        } else if (locale.hasPrefix("ko")) {
             htmlFile = "your_rights_ko"
-            break
-        case "pt_PT":
+        } else if (locale.hasPrefix("pt")) {
             htmlFile = "your_rights_pt"
-            break
-        case "zh_CN":
+        } else if (locale.hasPrefix("zh")) {
             htmlFile = "your_rights_zh"
-            break
-        default:
-            break
         }
         loadView(view: webView, htmlFile: htmlFile)
     }

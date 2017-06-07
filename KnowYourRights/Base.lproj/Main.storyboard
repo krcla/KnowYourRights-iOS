@@ -165,40 +165,6 @@
             </objects>
             <point key="canvasLocation" x="919" y="201"/>
         </scene>
-        <!--About-->
-        <scene sceneID="eck-HM-1qv">
-            <objects>
-                <viewController id="g2L-hD-tnf" userLabel="About" customClass="AboutViewController" customModule="KnowYourRights" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="lKW-vs-VxQ"/>
-                        <viewControllerLayoutGuide type="bottom" id="m5Y-17-OGg"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="bNL-MN-cYX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vNG-tX-MTn">
-                                <rect key="frame" x="0.0" y="20" width="414" height="667"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </webView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="vNG-tX-MTn" firstAttribute="leading" secondItem="bNL-MN-cYX" secondAttribute="leading" id="BaE-zJ-x6W"/>
-                            <constraint firstItem="m5Y-17-OGg" firstAttribute="top" secondItem="vNG-tX-MTn" secondAttribute="bottom" id="CDg-Sm-9un"/>
-                            <constraint firstItem="vNG-tX-MTn" firstAttribute="top" secondItem="lKW-vs-VxQ" secondAttribute="bottom" id="jra-yg-3mk"/>
-                            <constraint firstItem="vNG-tX-MTn" firstAttribute="width" secondItem="bNL-MN-cYX" secondAttribute="width" id="xmi-NL-Dfx"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="About" selectedImage="More" id="T5Z-DT-u2m"/>
-                    <connections>
-                        <outlet property="webView" destination="vNG-tX-MTn" id="MPH-v9-jH7"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FOJ-UD-kFk" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-259.4202898550725" y="717.39130434782612"/>
-        </scene>
         <!--To Officers-->
         <scene sceneID="PPF-AZ-mIe">
             <objects>
@@ -257,7 +223,6 @@
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="pDf-vi-oum" kind="relationship" relationship="viewControllers" id="BSm-pl-N3k"/>
-                        <segue destination="g2L-hD-tnf" kind="relationship" relationship="viewControllers" id="IyI-4f-WVk"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -267,7 +232,6 @@
     </scenes>
     <resources>
         <image name="Hotline" width="25" height="25"/>
-        <image name="More" width="25" height="25"/>
         <image name="ToOfficers" width="25" height="25"/>
         <image name="YourRights" width="25" height="25"/>
     </resources>

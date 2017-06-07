@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5AC03BF31EDE7BEF004018A4 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC03BF21EDE7BEF004018A4 /* AboutViewController.swift */; };
 		5AEBF4471EDE740900C349F5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5AEBF4451EDE740900C349F5 /* InfoPlist.strings */; };
 		5AF4E7621EBE72A600523531 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF4E7611EBE72A600523531 /* AppDelegate.swift */; };
 		5AF4E7641EBE72A600523531 /* YourRightsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF4E7631EBE72A600523531 /* YourRightsViewController.swift */; };
@@ -46,7 +45,6 @@
 		5A882FCE1EDD2CDD006DD0C0 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		5A882FCF1EDD2D04006DD0C0 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Main.strings; sourceTree = "<group>"; };
 		5A882FD01EDD2D04006DD0C0 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		5AC03BF21EDE7BEF004018A4 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		5AEBF4381EDE65DE00C349F5 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Main.strings; sourceTree = "<group>"; };
 		5AEBF43F1EDE67DF00C349F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/Info.plist; sourceTree = "<group>"; };
 		5AEBF4461EDE740900C349F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = KnowYourRights/Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -121,7 +119,6 @@
 			isa = PBXGroup;
 			children = (
 				5AFE946C1EC77675004693C5 /* Resources.bundle */,
-				5AC03BF21EDE7BEF004018A4 /* AboutViewController.swift */,
 				5AF4E7611EBE72A600523531 /* AppDelegate.swift */,
 				5AF4E7631EBE72A600523531 /* YourRightsViewController.swift */,
 				5AF4E7651EBE72A600523531 /* HotlineViewController.swift */,
@@ -220,8 +217,8 @@
 				TargetAttributes = {
 					5AF4E75D1EBE72A600523531 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 92RDWDR8BN;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = 4CRH4PLCHL;
+						ProvisioningStyle = Manual;
 					};
 					5AF4E7731EBE72A700523531 = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -296,7 +293,6 @@
 				5AF4E7921EBE7AAA00523531 /* ToOfficersViewController.swift in Sources */,
 				5AF4E7661EBE72A600523531 /* HotlineViewController.swift in Sources */,
 				5AF4E7621EBE72A600523531 /* AppDelegate.swift in Sources */,
-				5AC03BF31EDE7BEF004018A4 /* AboutViewController.swift in Sources */,
 				5AF4E7641EBE72A600523531 /* YourRightsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -481,11 +477,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 92RDWDR8BN;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 4CRH4PLCHL;
 				INFOPLIST_FILE = KnowYourRights/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.nakasec.KnowYourRights;
+				PRODUCT_BUNDLE_IDENTIFIER = org.krcla.KnowYourRights;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "da34a7b2-2e2a-4097-887a-6f0af7ef5c12";
+				PROVISIONING_PROFILE_SPECIFIER = KnowYourRights;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -494,11 +493,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 92RDWDR8BN;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = 4CRH4PLCHL;
 				INFOPLIST_FILE = KnowYourRights/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.nakasec.KnowYourRights;
+				PRODUCT_BUNDLE_IDENTIFIER = org.krcla.KnowYourRights;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "da34a7b2-2e2a-4097-887a-6f0af7ef5c12";
+				PROVISIONING_PROFILE_SPECIFIER = KnowYourRights;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

@@ -37,11 +37,15 @@ class ToOfficersViewController: UIViewController, UIWebViewDelegate {
                 let queryItems = URLComponents(url: url, resolvingAgainstBaseURL: false)?.queryItems
                 let speak = (queryItems?.first(where: { $0.name == "speak" })?.value)!
                 if (speak == "true") {
-                    let filePath = Bundle.main.path(forResource: "to_officers", ofType: "m4a", inDirectory: "Resources.bundle")
-                    let url = URL(fileURLWithPath: filePath!)
-                    player.removeAllItems()
-                    player.insert(AVPlayerItem(url: url), after: nil)
-                    player.play()
+                    if (player.rate != 0 && player.error == nil) {
+                        player.pause()
+                    } else {
+                        let filePath = Bundle.main.path(forResource: "to_officers", ofType: "m4a", inDirectory: "Resources.bundle")
+                        let url = URL(fileURLWithPath: filePath!)
+                        player.removeAllItems()
+                        player.insert(AVPlayerItem(url: url), after: nil)
+                        player.play()
+                    }
                     return false
                 }
             }
