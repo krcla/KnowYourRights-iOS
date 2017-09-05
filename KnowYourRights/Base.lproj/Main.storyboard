@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -66,7 +66,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="788" y="-493"/>
+            <point key="canvasLocation" x="896" y="-232"/>
         </scene>
         <!--Hotline-->
         <scene sceneID="wg7-f3-ORb">
@@ -80,90 +80,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MMM-ew-gUV">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MMM-ew-gUV">
                                 <rect key="frame" x="0.0" y="20" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Hotline" id="oc5-4j-q4L"/>
                                 </items>
                             </navigationBar>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Koo-dm-naa">
-                                <rect key="frame" x="0.0" y="271" width="414" height="194"/>
-                                <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="Call NAKASEC (Korean/English)" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TZh-3E-XUf">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="17"/>
-                                        <accessibility key="accessibilityConfiguration">
-                                            <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
-                                        </accessibility>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="og8-Hz-JIT">
-                                        <rect key="frame" x="0.0" y="17" width="414" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="z0V-j3-GGx"/>
-                                        </constraints>
-                                        <state key="normal" title="1-844-500-3222">
-                                            <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="callNakasecButtonClicked:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="9VO-fT-IWI"/>
-                                        </connections>
-                                    </button>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="650-gu-o54">
-                                        <rect key="frame" x="0.0" y="67" width="414" height="60"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <accessibility key="accessibilityConfiguration">
-                                            <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
-                                        </accessibility>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="HKX-EV-tgn"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="Call United We Dream (English/Spanish)" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XlC-j2-UAk">
-                                        <rect key="frame" x="0.0" y="127" width="414" height="17"/>
-                                        <accessibility key="accessibilityConfiguration">
-                                            <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
-                                        </accessibility>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4qo-nY-8By">
-                                        <rect key="frame" x="0.0" y="144" width="414" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="Vzf-Q0-Raw"/>
-                                        </constraints>
-                                        <state key="normal" title="1-844-363-1423"/>
-                                        <connections>
-                                            <action selector="callUwdButtonClicked:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="uoc-r8-FOU"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="650-gu-o54" firstAttribute="centerX" secondItem="Koo-dm-naa" secondAttribute="centerX" id="sza-lh-neQ"/>
-                                </constraints>
-                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GrZ-ZS-Wpo">
+                                <rect key="frame" x="12" y="64" width="390" height="631"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Koo-dm-naa" firstAttribute="centerY" secondItem="QS5-Rx-YEW" secondAttribute="centerY" id="7Qm-0R-2Jg"/>
-                            <constraint firstItem="Koo-dm-naa" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="I9e-hq-Aqu"/>
-                            <constraint firstItem="Koo-dm-naa" firstAttribute="width" secondItem="QS5-Rx-YEW" secondAttribute="width" id="ieu-Oj-Mz7"/>
+                            <constraint firstItem="GrZ-ZS-Wpo" firstAttribute="leadingMargin" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="187-VJ-arm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GrZ-ZS-Wpo" secondAttribute="trailingMargin" id="3VL-TK-qEI"/>
+                            <constraint firstItem="MMM-ew-gUV" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="BdE-bP-Vjc"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="GrZ-ZS-Wpo" secondAttribute="bottomMargin" id="HLk-Rb-GfS"/>
+                            <constraint firstItem="GrZ-ZS-Wpo" firstAttribute="top" secondItem="MMM-ew-gUV" secondAttribute="bottom" id="Hh5-Dk-m2a"/>
+                            <constraint firstItem="MMM-ew-gUV" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" id="kfC-fZ-1TU"/>
+                            <constraint firstItem="MMM-ew-gUV" firstAttribute="width" secondItem="QS5-Rx-YEW" secondAttribute="width" id="z0o-Lp-XBL"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Hotline" image="Hotline" id="cPa-gy-q4n"/>
                     <connections>
-                        <outlet property="callNakasecButton" destination="og8-Hz-JIT" id="WiL-pu-gMN"/>
-                        <outlet property="callUwdButton" destination="4qo-nY-8By" id="TwW-KI-fyv"/>
+                        <outlet property="buttonView" destination="GrZ-ZS-Wpo" id="kd6-A8-lfX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="919" y="201"/>
+            <point key="canvasLocation" x="896" y="474"/>
         </scene>
         <!--To Officers-->
         <scene sceneID="PPF-AZ-mIe">
@@ -207,7 +153,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lyF-YB-v2y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="522" y="719"/>
+            <point key="canvasLocation" x="0.0" y="757"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">

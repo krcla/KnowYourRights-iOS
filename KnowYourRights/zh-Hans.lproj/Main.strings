@@ -1,7 +1,4 @@
 
-/* Class = "UIButton"; normalTitle = "1-844-363-1423"; ObjectID = "4qo-nY-8By"; */
-"4qo-nY-8By.normalTitle" = "1-844-363-1423";
-
 /* Class = "UIViewController"; title = "Hotline"; ObjectID = "8rJ-Kc-sve"; */
 "8rJ-Kc-sve.title" = "热线";
 
@@ -11,12 +8,6 @@
 /* Class = "UINavigationItem"; title = "Your Rights"; ObjectID = "Ekw-Ef-QnW"; */
 "Ekw-Ef-QnW.title" = "你的权利";
 
-/* Class = "UITextField"; text = "Call NAKASEC (Korean/English)"; ObjectID = "TZh-3E-XUf"; */
-"TZh-3E-XUf.text" = "呼叫 NAKASEC (英语/朝鲜语)";
-
-/* Class = "UITextField"; text = "Call United We Dream (English/Spanish)"; ObjectID = "XlC-j2-UAk"; */
-"XlC-j2-UAk.text" = "呼叫 United We Dream (英语/西班牙语)";
-
 /* Class = "UITabBarItem"; title = "Your Rights"; ObjectID = "acW-dT-cKf"; */
 "acW-dT-cKf.title" = "你的权利";
 
@@ -25,9 +16,6 @@
 
 /* Class = "UINavigationItem"; title = "Hotline"; ObjectID = "oc5-4j-q4L"; */
 "oc5-4j-q4L.title" = "热线";
-
-/* Class = "UIButton"; normalTitle = "1-844-500-3222"; ObjectID = "og8-Hz-JIT"; */
-"og8-Hz-JIT.normalTitle" = "1-844-500-3222";
 
 /* Class = "UIViewController"; title = "ToOfficers"; ObjectID = "pDf-vi-oum"; */
 "pDf-vi-oum.title" = "致警官";

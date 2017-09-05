@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  KnowYourRights
+
+  Created by ZUWHAN KIM on 9/3/17.
+  Copyright © 2017 ZUWHAN KIM. All rights reserved.
+*/
+"Call NAKASEC" = "미교협 전화연결 (한국어/영어)";
+"Call UWD" = "United We Dream 전화연결 (영어/스페인어)";
+"Remove confirmation" = "이 버튼을 삭제할까요?";
+"Remove" = "삭제";
+"Cancel" = "취소";
