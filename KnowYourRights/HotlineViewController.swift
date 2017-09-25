@@ -50,7 +50,7 @@ class HotlineViewController: UIViewController, CNContactPickerDelegate {
         userDefaults.synchronize()
     }
 
-    func callButtonClicked(_ sender: UIButton) {
+    @objc func callButtonClicked(_ sender: UIButton) {
         if let url = URL(string: "tel:" + (phoneNumbers[sender.tag].value(forKey: "digits") as! String)) {
             if UIApplication.shared.canOpenURL(url) { // TODO: change to CHECK()
                 UIApplication.shared.openURL(url)
@@ -58,7 +58,7 @@ class HotlineViewController: UIViewController, CNContactPickerDelegate {
         }
     }
 
-    func deleteButtonClicked(_ sender: UIGestureRecognizer) {
+    @objc func deleteButtonClicked(_ sender: UIGestureRecognizer) {
         if sender.state == .began {
             let buttonIndex = (sender.view?.tag)!
             let configIndex = buttonIndex - 2
@@ -104,7 +104,7 @@ class HotlineViewController: UIViewController, CNContactPickerDelegate {
         }
     }
 
-    func addButtonClicked(_ sender: UIButton) {
+    @objc func addButtonClicked(_ sender: UIButton) {
         let controller = CNContactPickerViewController()
         controller.delegate = self
         controller.predicateForEnablingContact = NSPredicate(
