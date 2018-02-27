@@ -8,16 +8,25 @@
 
 import UIKit
 
-class YourRightsViewController: UIViewController, UIWebViewDelegate {
-    @IBOutlet weak var languageView: UIWebView!
+class YourRightsViewController: UIViewController, UIWebViewDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
+
     @IBOutlet weak var webView: UIWebView!
+    @IBOutlet weak var languageButton: UIButton!
+    @IBOutlet weak var languagePicker: UIPickerView!
+
     var locale: String = ""
+    var pickerData: [String] = [String]()
+    var localeData: [String] = [String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        loadView(view: languageView, htmlFile: "your_rights_languages")
-        languageView.delegate = self
+
+        pickerData = ["English", "Español", "한국어", "Português", "中文"]
+        localeData = ["en_US", "es_US", "ko_KR", "pt_PT", "zh_CN"]
+        languagePicker.delegate = self
+        languagePicker.dataSource = self
+
+        languageButton.addTarget(self, action: #selector(languageButtonClicked), for: .touchUpInside)
 
         locale = (Locale.current as NSLocale).object(forKey: .languageCode) as! String
         loadInstructionView()
@@ -28,7 +37,7 @@ class YourRightsViewController: UIViewController, UIWebViewDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
     func loadInstructionView() {
         var htmlFile = "your_rights_en"
         if (locale.hasPrefix("es")) {
@@ -74,5 +83,34 @@ class YourRightsViewController: UIViewController, UIWebViewDelegate {
             // Handle other navigation types.
             return true
         }
+    }
+
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickerData.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return pickerData[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        languagePicker.isHidden = true
+        webView.isUserInteractionEnabled = true
+        webView.alpha = 1.0
+        languageButton.isEnabled = true
+        locale = localeData[row]
+        loadInstructionView()
+    }
+    
+    @objc func languageButtonClicked(_ sender: UIButton) {
+        languagePicker.isHidden = false
+        self.view.addSubview(languagePicker)
+        webView.isUserInteractionEnabled = false
+        webView.alpha = 0.3
+        languageButton.isEnabled = false
     }
 }

@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -23,7 +24,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R1a-Iq-bv7">
-                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="64" width="414" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="oGd-mT-6RL"/>
                                 </constraints>
@@ -31,42 +32,50 @@
                                     <navigationItem title="Your Rights" id="Ekw-Ef-QnW"/>
                                 </items>
                             </navigationBar>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wTR-eY-acE">
-                                <rect key="frame" x="0.0" y="64" width="414" height="50"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="mNQ-9O-Kjp"/>
-                                </constraints>
-                                <dataDetectorType key="dataDetectorTypes"/>
-                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ZU-nk-v8o">
+                                <rect key="frame" x="0.0" y="108" width="394" height="44"/>
+                                <state key="normal" title="Languages..."/>
+                            </button>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="75Z-ee-VdP">
-                                <rect key="frame" x="0.0" y="114" width="414" height="573"/>
+                                <rect key="frame" x="0.0" y="152" width="414" height="535"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n2T-5Y-7zM">
+                                <rect key="frame" x="0.0" y="160" width="414" height="216"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="tsR-hK-woN" id="fQW-G9-SLn"/>
+                                </connections>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wTR-eY-acE" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="0Vg-gX-ycv"/>
-                            <constraint firstItem="wTR-eY-acE" firstAttribute="width" secondItem="tsR-hK-woN" secondAttribute="width" id="56P-VU-GUs"/>
+                            <constraint firstItem="n2T-5Y-7zM" firstAttribute="top" secondItem="7ZU-nk-v8o" secondAttribute="bottom" constant="8" id="02g-F4-Jeb"/>
                             <constraint firstItem="75Z-ee-VdP" firstAttribute="width" secondItem="tsR-hK-woN" secondAttribute="width" id="6F3-6h-ywH"/>
-                            <constraint firstItem="75Z-ee-VdP" firstAttribute="top" secondItem="wTR-eY-acE" secondAttribute="bottom" id="K6S-Dd-aVx"/>
+                            <constraint firstItem="7ZU-nk-v8o" firstAttribute="height" secondItem="R1a-Iq-bv7" secondAttribute="height" id="JRf-xQ-LwD"/>
                             <constraint firstItem="R1a-Iq-bv7" firstAttribute="width" secondItem="tsR-hK-woN" secondAttribute="width" id="PSJ-9w-48F"/>
+                            <constraint firstItem="7ZU-nk-v8o" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailing" constant="-20" id="Po1-Wj-LJC"/>
+                            <constraint firstItem="75Z-ee-VdP" firstAttribute="top" secondItem="7ZU-nk-v8o" secondAttribute="bottom" id="QA7-Fv-icW"/>
                             <constraint firstItem="75Z-ee-VdP" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="f6s-AS-Z51"/>
                             <constraint firstItem="R1a-Iq-bv7" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="gDx-ye-NZX"/>
-                            <constraint firstItem="wTR-eY-acE" firstAttribute="top" secondItem="R1a-Iq-bv7" secondAttribute="bottom" id="jaO-ss-EWG"/>
+                            <constraint firstItem="7ZU-nk-v8o" firstAttribute="top" secondItem="R1a-Iq-bv7" secondAttribute="bottom" id="jkJ-1U-SwY"/>
+                            <constraint firstItem="7ZU-nk-v8o" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="pXp-DL-sfZ"/>
+                            <constraint firstItem="n2T-5Y-7zM" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="q1p-BP-a86"/>
                             <constraint firstItem="R1a-Iq-bv7" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" id="u8H-t4-anx"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="75Z-ee-VdP" secondAttribute="bottom" id="x3W-9C-Ia0"/>
+                            <constraint firstAttribute="trailing" secondItem="n2T-5Y-7zM" secondAttribute="trailing" id="zs5-Cx-nCY"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Your Rights" image="YourRights" id="acW-dT-cKf"/>
+                    <navigationItem key="navigationItem" id="Pp3-V8-2W1"/>
                     <connections>
-                        <outlet property="languageView" destination="wTR-eY-acE" id="W9o-ZX-3Nr"/>
+                        <outlet property="languageButton" destination="7ZU-nk-v8o" id="g7s-Nb-7T6"/>
+                        <outlet property="languagePicker" destination="n2T-5Y-7zM" id="ORp-yk-3Om"/>
                         <outlet property="webView" destination="75Z-ee-VdP" id="0i3-CF-5Xg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="896" y="-232"/>
+            <point key="canvasLocation" x="1735" y="-194"/>
         </scene>
         <!--Hotline-->
         <scene sceneID="wg7-f3-ORb">
@@ -87,7 +96,7 @@
                                 </items>
                             </navigationBar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GrZ-ZS-Wpo">
-                                <rect key="frame" x="12" y="64" width="390" height="631"/>
+                                <rect key="frame" x="12" y="64" width="390" height="18271"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
@@ -166,7 +175,7 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="XWF-f7-JZK" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="pDf-vi-oum" kind="relationship" relationship="viewControllers" id="BSm-pl-N3k"/>
                     </connections>
@@ -174,6 +183,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <!--Your Rights-->
+        <scene sceneID="td6-4y-qo3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XWF-f7-JZK" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Your Rights" image="YourRights" id="acW-dT-cKf"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="N0q-tY-xK1">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="rootViewController" id="BiZ-Xi-Ugr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="noR-u4-3pp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="895.6521739130435" y="-194.02173913043481"/>
         </scene>
     </scenes>
     <resources>
