@@ -23,8 +23,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ZU-nk-v8o">
+                                <rect key="frame" x="0.0" y="64" width="394" height="44"/>
+                                <state key="normal" title="Languages..."/>
+                            </button>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="75Z-ee-VdP">
+                                <rect key="frame" x="0.0" y="108" width="414" height="579"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <pickerView opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n2T-5Y-7zM">
+                                <rect key="frame" x="0.0" y="116" width="414" height="216"/>
+                                <color key="backgroundColor" red="1" green="0.64113682508468628" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="tsR-hK-woN" id="fQW-G9-SLn"/>
+                                </connections>
+                            </pickerView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R1a-Iq-bv7">
-                                <rect key="frame" x="0.0" y="64" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="oGd-mT-6RL"/>
                                 </constraints>
@@ -32,25 +47,10 @@
                                     <navigationItem title="Your Rights" id="Ekw-Ef-QnW"/>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ZU-nk-v8o">
-                                <rect key="frame" x="0.0" y="108" width="394" height="44"/>
-                                <state key="normal" title="Languages..."/>
-                            </button>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="75Z-ee-VdP">
-                                <rect key="frame" x="0.0" y="152" width="414" height="535"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </webView>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n2T-5Y-7zM">
-                                <rect key="frame" x="0.0" y="160" width="414" height="216"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="tsR-hK-woN" id="fQW-G9-SLn"/>
-                                </connections>
-                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="n2T-5Y-7zM" firstAttribute="top" secondItem="7ZU-nk-v8o" secondAttribute="bottom" constant="8" id="02g-F4-Jeb"/>
+                            <constraint firstItem="n2T-5Y-7zM" firstAttribute="top" secondItem="7ZU-nk-v8o" secondAttribute="bottom" constant="8" symbolic="YES" id="02g-F4-Jeb"/>
                             <constraint firstItem="75Z-ee-VdP" firstAttribute="width" secondItem="tsR-hK-woN" secondAttribute="width" id="6F3-6h-ywH"/>
                             <constraint firstItem="7ZU-nk-v8o" firstAttribute="height" secondItem="R1a-Iq-bv7" secondAttribute="height" id="JRf-xQ-LwD"/>
                             <constraint firstItem="R1a-Iq-bv7" firstAttribute="width" secondItem="tsR-hK-woN" secondAttribute="width" id="PSJ-9w-48F"/>
@@ -66,7 +66,9 @@
                             <constraint firstAttribute="trailing" secondItem="n2T-5Y-7zM" secondAttribute="trailing" id="zs5-Cx-nCY"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Your Rights" image="YourRights" landscapeImage="YourRights" selectedImage="YourRights" id="6q4-wC-5yP"/>
                     <navigationItem key="navigationItem" id="Pp3-V8-2W1"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="languageButton" destination="7ZU-nk-v8o" id="g7s-Nb-7T6"/>
                         <outlet property="languagePicker" destination="n2T-5Y-7zM" id="ORp-yk-3Om"/>
@@ -75,7 +77,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1735" y="-194"/>
+            <point key="canvasLocation" x="896" y="-236"/>
         </scene>
         <!--Hotline-->
         <scene sceneID="wg7-f3-ORb">
@@ -96,7 +98,7 @@
                                 </items>
                             </navigationBar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GrZ-ZS-Wpo">
-                                <rect key="frame" x="12" y="64" width="390" height="18271"/>
+                                <rect key="frame" x="12" y="64" width="390" height="680"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
@@ -114,6 +116,7 @@
                     <tabBarItem key="tabBarItem" title="Hotline" image="Hotline" id="cPa-gy-q4n"/>
                     <connections>
                         <outlet property="buttonView" destination="GrZ-ZS-Wpo" id="kd6-A8-lfX"/>
+                        <outlet property="tabBarItem" destination="cPa-gy-q4n" id="v1d-Hu-VIu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
@@ -155,7 +158,7 @@
                             <constraint firstItem="aZw-Ae-TM3" firstAttribute="top" secondItem="plA-5W-Ayc" secondAttribute="bottom" id="kcc-O4-oHw"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="To Officers" image="ToOfficers" id="xDY-jd-eHI"/>
+                    <tabBarItem key="tabBarItem" title="To Officers" image="ToOfficers" landscapeImage="ToOfficers" id="xDY-jd-eHI"/>
                     <connections>
                         <outlet property="webView" destination="aZw-Ae-TM3" id="Lzo-vJ-wHF"/>
                     </connections>
@@ -175,7 +178,7 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="XWF-f7-JZK" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="dTm-qm-FaC"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="pDf-vi-oum" kind="relationship" relationship="viewControllers" id="BSm-pl-N3k"/>
                     </connections>
@@ -183,24 +186,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
-        </scene>
-        <!--Your Rights-->
-        <scene sceneID="td6-4y-qo3">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XWF-f7-JZK" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Your Rights" image="YourRights" id="acW-dT-cKf"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="N0q-tY-xK1">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="rootViewController" id="BiZ-Xi-Ugr"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="noR-u4-3pp" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="895.6521739130435" y="-194.02173913043481"/>
         </scene>
     </scenes>
     <resources>

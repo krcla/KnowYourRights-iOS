@@ -8,8 +8,8 @@
 /* Class = "UINavigationItem"; title = "Your Rights"; ObjectID = "Ekw-Ef-QnW"; */
 "Ekw-Ef-QnW.title" = "당신의 권리";
 
-/* Class = "UITabBarItem"; title = "Your Rights"; ObjectID = "acW-dT-cKf"; */
-"acW-dT-cKf.title" = "당신의 권리";
+/* Class = "UITabBarItem"; title = "Your Rights"; ObjectID = "6q4-wC-5yP"; */
+"6q4-wC-5yP.title" = "당신의 권리";
 
 /* Class = "UITabBarItem"; title = "Hotline"; ObjectID = "cPa-gy-q4n"; */
 "cPa-gy-q4n.title" = "핫라인";
@@ -25,3 +25,6 @@
 
 /* Class = "UITabBarItem"; title = "To Officers"; ObjectID = "xDY-jd-eHI"; */
 "xDY-jd-eHI.title" = "이민단속반에게";
+
+/* Class = "UIButton"; title = "Languages..."; ObjectID = "7ZU-nk-v8o"; */
+"7ZU-nk-v8o.title" = "다른 언어..."

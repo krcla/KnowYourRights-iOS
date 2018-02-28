@@ -144,7 +144,7 @@ class HotlineViewController: UIViewController, CNContactPickerDelegate {
 
     func rearrangeButtons() {
         let frameWidth = self.buttonView.frame.width
-        let frameHeight = self.buttonView.frame.height
+        let frameHeight = self.buttonView.frame.height - (self.tabBarController?.tabBar.frame.size.height)!
         
         let buttonWidth = min(frameWidth - 60, minButtonWidth)
         let xMargin = (frameWidth - buttonWidth) / 2

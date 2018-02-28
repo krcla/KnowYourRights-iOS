@@ -8,7 +8,7 @@
 /* Class = "UINavigationItem"; title = "Your Rights"; ObjectID = "Ekw-Ef-QnW"; */
 "Ekw-Ef-QnW.title" = "你的权利";
 
-/* Class = "UITabBarItem"; title = "Your Rights"; ObjectID = "acW-dT-cKf"; */
+/* Class = "UITabBarItem"; title = "Your Rights"; ObjectID = "6q4-wC-5yP"; */
 "acW-dT-cKf.title" = "你的权利";
 
 /* Class = "UITabBarItem"; title = "Hotline"; ObjectID = "cPa-gy-q4n"; */
@@ -25,3 +25,6 @@
 
 /* Class = "UITabBarItem"; title = "To Officers"; ObjectID = "xDY-jd-eHI"; */
 "xDY-jd-eHI.title" = "致警官";
+
+/* Class = "UIButton"; title = "Languages..."; ObjectID = "7ZU-nk-v8o"; */
+"7ZU-nk-v8o.title" = "语言..."
