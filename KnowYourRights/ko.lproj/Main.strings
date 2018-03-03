@@ -1,4 +1,7 @@
 
+/* Class = "UIButton"; normalTitle = "English"; ObjectID = "7ZU-nk-v8o"; */
+"7ZU-nk-v8o.normalTitle" = "한국어";
+
 /* Class = "UIViewController"; title = "Hotline"; ObjectID = "8rJ-Kc-sve"; */
 "8rJ-Kc-sve.title" = "핫라인";
 
@@ -26,5 +29,3 @@
 /* Class = "UITabBarItem"; title = "To Officers"; ObjectID = "xDY-jd-eHI"; */
 "xDY-jd-eHI.title" = "이민단속반에게";
 
-/* Class = "UIButton"; title = "Languages..."; ObjectID = "7ZU-nk-v8o"; */
-"7ZU-nk-v8o.title" = "다른 언어..."

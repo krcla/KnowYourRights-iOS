@@ -51,6 +51,9 @@
 		5A882FD01EDD2D04006DD0C0 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		5ACF7B561F5C6EC4004C76D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5ADDA66F1F5CED6000F23CAF /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5AE466CB204B01C80076FA85 /* ht */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ht; path = ht.lproj/Main.strings; sourceTree = "<group>"; };
+		5AE466CC204B02930076FA85 /* ht */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ht; path = ht.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5AE466CD204B03810076FA85 /* ht */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ht; path = KnowYourRights/ht.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5AEBF4381EDE65DE00C349F5 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Main.strings; sourceTree = "<group>"; };
 		5AEBF43F1EDE67DF00C349F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Base; path = Base.lproj/Info.plist; sourceTree = "<group>"; };
 		5AEBF4461EDE740900C349F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = KnowYourRights/Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -253,6 +256,7 @@
 				es,
 				pt,
 				"zh-Hans",
+				ht,
 			);
 			mainGroup = 5AF4E7551EBE72A600523531;
 			productRefGroup = 5AF4E75F1EBE72A600523531 /* Products */;
@@ -348,6 +352,7 @@
 				5A3A2C571F5CEF3600A589CC /* ko */,
 				5A3A2C581F5CEF3B00A589CC /* pt */,
 				5A3A2C591F5CEF3D00A589CC /* zh-Hans */,
+				5AE466CC204B02930076FA85 /* ht */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -368,6 +373,7 @@
 				5AEBF4491EDE745E00C349F5 /* pt */,
 				5AEBF44A1EDE745F00C349F5 /* es */,
 				5AEBF44B1EDE746000C349F5 /* zh-Hans */,
+				5AE466CD204B03810076FA85 /* ht */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -380,6 +386,7 @@
 				5A882FCB1EDD2CCF006DD0C0 /* es */,
 				5A882FCF1EDD2D04006DD0C0 /* pt */,
 				5AEBF4381EDE65DE00C349F5 /* ko */,
+				5AE466CB204B01C80076FA85 /* ht */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

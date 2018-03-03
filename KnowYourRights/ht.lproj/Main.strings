@@ -1,31 +1,30 @@
 
+/* Class = "UITabBarItem"; title = "Your Rights"; ObjectID = "6q4-wC-5yP"; */
+"6q4-wC-5yP.title" = "Dwa ou";
+
 /* Class = "UIButton"; normalTitle = "English"; ObjectID = "7ZU-nk-v8o"; */
-"7ZU-nk-v8o.normalTitle" = "Español";
+"7ZU-nk-v8o.normalTitle" = "Kreyòl Ayisyen";
 
 /* Class = "UIViewController"; title = "Hotline"; ObjectID = "8rJ-Kc-sve"; */
-"8rJ-Kc-sve.title" = "Línea Directa";
+"8rJ-Kc-sve.title" = "Liy telefòn dirèk";
 
 /* Class = "UIViewController"; title = "Your Rights"; ObjectID = "9pv-A4-QxB"; */
-"9pv-A4-QxB.title" = "Sus Derechos";
+"9pv-A4-QxB.title" = "Dwa ou";
 
 /* Class = "UINavigationItem"; title = "Your Rights"; ObjectID = "Ekw-Ef-QnW"; */
-"Ekw-Ef-QnW.title" = "Sus Derechos";
-
-/* Class = "UITabBarItem"; title = "Your Rights"; ObjectID = "6q4-wC-5yP"; */
-"acW-dT-cKf.title" = "Sus Derechos";
+"Ekw-Ef-QnW.title" = "Dwa ou";
 
 /* Class = "UITabBarItem"; title = "Hotline"; ObjectID = "cPa-gy-q4n"; */
-"cPa-gy-q4n.title" = "Línea Directa";
+"cPa-gy-q4n.title" = "Liy telefòn dirèk";
 
 /* Class = "UINavigationItem"; title = "Hotline"; ObjectID = "oc5-4j-q4L"; */
-"oc5-4j-q4L.title" = "Línea Directa";
+"oc5-4j-q4L.title" = "Liy telefòn dirèk";
 
 /* Class = "UIViewController"; title = "To Officers"; ObjectID = "pDf-vi-oum"; */
-"pDf-vi-oum.title" = "A Los Oficiales";
+"pDf-vi-oum.title" = "Pou Ajan yo";
 
 /* Class = "UINavigationItem"; title = "To Officers"; ObjectID = "qud-qi-AYr"; */
-"qud-qi-AYr.title" = "A Los Oficiales";
+"qud-qi-AYr.title" = "Pou Ajan yo";
 
 /* Class = "UITabBarItem"; title = "To Officers"; ObjectID = "xDY-jd-eHI"; */
-"xDY-jd-eHI.title" = "A Los Oficiales";
-
+"xDY-jd-eHI.title" = "Pou Ajan yo";

@@ -15,20 +15,48 @@ class YourRightsViewController: UIViewController, UIWebViewDelegate, UIPickerVie
     @IBOutlet weak var languagePicker: UIPickerView!
 
     var locale: String = ""
+    var localeChanged: Bool = false
     var pickerData: [String] = [String]()
     var localeData: [String] = [String]()
 
+    // TODO: change local handling to a separate class so that the related vars cannot be
+    // altered outside these three methods.
+
+    // Reads the user default or use the system locale.
+    func setLocale() {
+        if let savedLocale : String = UserDefaults.standard.object(forKey: "locale") as! String? {
+            locale = savedLocale
+        } else {
+            locale = (Locale.current as NSLocale).object(forKey: .languageCode) as! String
+        }
+    }
+
+    func changeLocale(_ toLocale: String!) {
+        locale = toLocale
+        localeChanged = true
+        UserDefaults.standard.set(locale, forKey: "locale")
+    }
+
+    // Returns the picker data (= button title) for the locale.
+    func getPickerDataForLocale() -> String {
+        for i in 0..<localeData.count {
+            if (locale.hasPrefix(localeData[i])) { return pickerData[i] }
+        }
+        return "" // This shouldn't happen.
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        pickerData = ["English", "Español", "한국어", "Português", "中文"]
-        localeData = ["en_US", "es_US", "ko_KR", "pt_PT", "zh_CN"]
+        pickerData = ["English", "Español", "한국어", "Português", "中文", "Kreyòl Ayisyen"]
+        localeData = ["en", "es", "ko", "pt", "zh", "ht"]
         languagePicker.delegate = self
         languagePicker.dataSource = self
 
         languageButton.addTarget(self, action: #selector(languageButtonClicked), for: .touchUpInside)
 
-        locale = (Locale.current as NSLocale).object(forKey: .languageCode) as! String
+        setLocale()
+        languageButton.setTitle(getPickerDataForLocale(), for: .normal)
         loadInstructionView()
         webView.delegate = self
     }
@@ -48,6 +76,8 @@ class YourRightsViewController: UIViewController, UIWebViewDelegate, UIPickerVie
             htmlFile = "your_rights_pt"
         } else if (locale.hasPrefix("zh")) {
             htmlFile = "your_rights_zh"
+        } else if (locale.hasPrefix("ht")) {
+            htmlFile = "your_rights_ht"
         }
         loadView(view: webView, htmlFile: htmlFile)
     }
@@ -64,13 +94,6 @@ class YourRightsViewController: UIViewController, UIWebViewDelegate, UIPickerVie
         switch navigationType {
         case .linkClicked:
             guard let url = request.url else { return true }
-            if (url.lastPathComponent == "your_rights_languages.html") {
-                let queryItems = URLComponents(url: url, resolvingAgainstBaseURL: false)?.queryItems
-                locale = (queryItems?.first(where: { $0.name == "locale" })?.value)!
-                loadInstructionView()
-                return false
-            }
-            
             // Open links in Safari.
             if #available(iOS 10.0, *) {
                 UIApplication.shared.open(url, options: [:], completionHandler: nil)
@@ -103,7 +126,7 @@ class YourRightsViewController: UIViewController, UIWebViewDelegate, UIPickerVie
         webView.alpha = 1.0
         languageButton.setTitle(pickerData[row], for: .normal)
         languageButton.isEnabled = true
-        locale = localeData[row]
+        changeLocale(localeData[row])
         loadInstructionView()
     }
     
