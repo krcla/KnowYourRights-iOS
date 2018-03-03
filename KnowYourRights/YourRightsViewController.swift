@@ -101,6 +101,7 @@ class YourRightsViewController: UIViewController, UIWebViewDelegate, UIPickerVie
         languagePicker.isHidden = true
         webView.isUserInteractionEnabled = true
         webView.alpha = 1.0
+        languageButton.setTitle(pickerData[row], for: .normal)
         languageButton.isEnabled = true
         locale = localeData[row]
         loadInstructionView()

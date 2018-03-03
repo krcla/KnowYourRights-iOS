@@ -23,21 +23,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ZU-nk-v8o">
-                                <rect key="frame" x="0.0" y="64" width="394" height="44"/>
-                                <state key="normal" title="Languages..."/>
-                            </button>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="75Z-ee-VdP">
-                                <rect key="frame" x="0.0" y="108" width="414" height="579"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </webView>
-                            <pickerView opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n2T-5Y-7zM">
-                                <rect key="frame" x="0.0" y="116" width="414" height="216"/>
-                                <color key="backgroundColor" red="1" green="0.64113682508468628" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="tsR-hK-woN" id="fQW-G9-SLn"/>
-                                </connections>
-                            </pickerView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R1a-Iq-bv7">
                                 <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                                 <constraints>
@@ -47,6 +32,28 @@
                                     <navigationItem title="Your Rights" id="Ekw-Ef-QnW"/>
                                 </items>
                             </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ZU-nk-v8o">
+                                <rect key="frame" x="204" y="64" width="200" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="C95-jT-ZCz"/>
+                                </constraints>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="50" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="160" minY="5" maxX="0.0" maxY="5"/>
+                                <state key="normal" title="English" image="ScrollUpDown">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <pickerView opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n2T-5Y-7zM">
+                                <rect key="frame" x="0.0" y="116" width="414" height="216"/>
+                                <color key="backgroundColor" red="1" green="0.64113682508468628" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="tsR-hK-woN" id="fQW-G9-SLn"/>
+                                </connections>
+                            </pickerView>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="75Z-ee-VdP">
+                                <rect key="frame" x="0.0" y="108" width="414" height="579"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -54,12 +61,11 @@
                             <constraint firstItem="75Z-ee-VdP" firstAttribute="width" secondItem="tsR-hK-woN" secondAttribute="width" id="6F3-6h-ywH"/>
                             <constraint firstItem="7ZU-nk-v8o" firstAttribute="height" secondItem="R1a-Iq-bv7" secondAttribute="height" id="JRf-xQ-LwD"/>
                             <constraint firstItem="R1a-Iq-bv7" firstAttribute="width" secondItem="tsR-hK-woN" secondAttribute="width" id="PSJ-9w-48F"/>
-                            <constraint firstItem="7ZU-nk-v8o" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailing" constant="-20" id="Po1-Wj-LJC"/>
+                            <constraint firstItem="7ZU-nk-v8o" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailing" constant="-10" id="Po1-Wj-LJC"/>
                             <constraint firstItem="75Z-ee-VdP" firstAttribute="top" secondItem="7ZU-nk-v8o" secondAttribute="bottom" id="QA7-Fv-icW"/>
                             <constraint firstItem="75Z-ee-VdP" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="f6s-AS-Z51"/>
                             <constraint firstItem="R1a-Iq-bv7" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="gDx-ye-NZX"/>
                             <constraint firstItem="7ZU-nk-v8o" firstAttribute="top" secondItem="R1a-Iq-bv7" secondAttribute="bottom" id="jkJ-1U-SwY"/>
-                            <constraint firstItem="7ZU-nk-v8o" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="pXp-DL-sfZ"/>
                             <constraint firstItem="n2T-5Y-7zM" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="q1p-BP-a86"/>
                             <constraint firstItem="R1a-Iq-bv7" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" id="u8H-t4-anx"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="75Z-ee-VdP" secondAttribute="bottom" id="x3W-9C-Ia0"/>
@@ -77,7 +83,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="896" y="-236"/>
+            <point key="canvasLocation" x="895.6521739130435" y="-236.41304347826087"/>
         </scene>
         <!--Hotline-->
         <scene sceneID="wg7-f3-ORb">
@@ -190,6 +196,7 @@
     </scenes>
     <resources>
         <image name="Hotline" width="25" height="25"/>
+        <image name="ScrollUpDown" width="25" height="25"/>
         <image name="ToOfficers" width="25" height="25"/>
         <image name="YourRights" width="25" height="25"/>
     </resources>
