@@ -29,3 +29,11 @@
 /* Class = "UITabBarItem"; title = "To Officers"; ObjectID = "xDY-jd-eHI"; */
 "xDY-jd-eHI.title" = "A Los Oficiales";
 
+/* Class = "UINavigationItem"; title = "Know Your Rights"; ObjectID = "VFN-Nn-wCt"; */
+"VFN-Nn-wCt.title" = "Conozca Sus Derechos";
+
+/* Class = "UILabel"; text = "Spread the app"; ObjectID = "SwT-RS-jfG"; */
+"SwT-RS-jfG.text" = "Difunde";
+
+/* Class = "UILabel"; text = "About"; ObjectID = "hUy-kK-NDH"; */
+"hUy-kK-NDH.text" = "Acerca de";

@@ -29,3 +29,11 @@
 /* Class = "UITabBarItem"; title = "To Officers"; ObjectID = "xDY-jd-eHI"; */
 "xDY-jd-eHI.title" = "이민단속반에게";
 
+/* Class = "UINavigationItem"; title = "Know Your Rights"; ObjectID = "VFN-Nn-wCt"; */
+"VFN-Nn-wCt.title" = "당신의 권리";
+
+/* Class = "UILabel"; text = "Spread the app"; ObjectID = "SwT-RS-jfG"; */
+"SwT-RS-jfG.text" = "앱 알리기";
+
+/* Class = "UILabel"; text = "About"; ObjectID = "hUy-kK-NDH"; */
+"hUy-kK-NDH.text" = "이 앱에 대하여";
