@@ -35,7 +35,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ZU-nk-v8o">
                                 <rect key="frame" x="204" y="64" width="200" height="44"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="C95-jT-ZCz"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="C95-jT-ZCz"/>
                                 </constraints>
                                 <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="50" maxY="0.0"/>
                                 <inset key="imageEdgeInsets" minX="160" minY="5" maxX="0.0" maxY="5"/>
@@ -64,6 +64,7 @@
                             <constraint firstItem="7ZU-nk-v8o" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailing" constant="-10" id="Po1-Wj-LJC"/>
                             <constraint firstItem="75Z-ee-VdP" firstAttribute="top" secondItem="7ZU-nk-v8o" secondAttribute="bottom" id="QA7-Fv-icW"/>
                             <constraint firstItem="75Z-ee-VdP" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="f6s-AS-Z51"/>
+                            <constraint firstItem="7ZU-nk-v8o" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="tsR-hK-woN" secondAttribute="leading" constant="20" symbolic="YES" id="f7v-1X-yVb"/>
                             <constraint firstItem="R1a-Iq-bv7" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="gDx-ye-NZX"/>
                             <constraint firstItem="7ZU-nk-v8o" firstAttribute="top" secondItem="R1a-Iq-bv7" secondAttribute="bottom" id="jkJ-1U-SwY"/>
                             <constraint firstItem="n2T-5Y-7zM" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="q1p-BP-a86"/>
@@ -147,25 +148,36 @@
                                     <navigationItem title="To Officers" id="qud-qi-AYr"/>
                                 </items>
                             </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3AN-Ui-zSf">
+                                <rect key="frame" x="332" y="64" width="70" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="KvI-65-WwG"/>
+                                    <constraint firstAttribute="height" constant="45" id="bG4-FO-zQ3"/>
+                                </constraints>
+                                <state key="normal" image="Speaker"/>
+                            </button>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aZw-Ae-TM3">
-                                <rect key="frame" x="20" y="64" width="382" height="623"/>
+                                <rect key="frame" x="0.0" y="109" width="414" height="578"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <dataDetectorType key="dataDetectorTypes"/>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="aZw-Ae-TM3" secondAttribute="trailingMargin" id="16y-FK-w25"/>
-                            <constraint firstItem="aZw-Ae-TM3" firstAttribute="leading" secondItem="agz-yb-bOw" secondAttribute="leadingMargin" id="9Hj-2g-QoH"/>
+                            <constraint firstAttribute="trailing" secondItem="aZw-Ae-TM3" secondAttribute="trailing" id="16y-FK-w25"/>
+                            <constraint firstItem="aZw-Ae-TM3" firstAttribute="leading" secondItem="agz-yb-bOw" secondAttribute="leading" id="9Hj-2g-QoH"/>
                             <constraint firstItem="plA-5W-Ayc" firstAttribute="leading" secondItem="agz-yb-bOw" secondAttribute="leading" id="Gg9-Nx-llM"/>
                             <constraint firstItem="qtG-aR-yTZ" firstAttribute="top" secondItem="aZw-Ae-TM3" secondAttribute="bottom" id="Kew-eb-eqG"/>
+                            <constraint firstItem="3AN-Ui-zSf" firstAttribute="top" secondItem="plA-5W-Ayc" secondAttribute="bottom" id="LuU-AR-PfM"/>
+                            <constraint firstItem="aZw-Ae-TM3" firstAttribute="top" secondItem="3AN-Ui-zSf" secondAttribute="bottom" id="XIb-Gi-sb2"/>
                             <constraint firstItem="plA-5W-Ayc" firstAttribute="top" secondItem="AV7-UG-x7a" secondAttribute="bottom" id="YDB-jn-Ko1"/>
                             <constraint firstItem="plA-5W-Ayc" firstAttribute="width" secondItem="agz-yb-bOw" secondAttribute="width" id="cUM-Vb-oj5"/>
-                            <constraint firstItem="aZw-Ae-TM3" firstAttribute="top" secondItem="plA-5W-Ayc" secondAttribute="bottom" id="kcc-O4-oHw"/>
+                            <constraint firstAttribute="trailing" secondItem="3AN-Ui-zSf" secondAttribute="trailingMargin" constant="20" id="kp8-dB-k1q"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="To Officers" image="ToOfficers" landscapeImage="ToOfficers" selectedImage="ToOfficers" id="xDY-jd-eHI"/>
                     <connections>
+                        <outlet property="speakButton" destination="3AN-Ui-zSf" id="z6U-Ll-GvV"/>
                         <outlet property="webView" destination="aZw-Ae-TM3" id="Lzo-vJ-wHF"/>
                     </connections>
                 </viewController>
@@ -274,6 +286,7 @@
         <image name="Hotline" width="25" height="25"/>
         <image name="More" width="25" height="25"/>
         <image name="ScrollUpDown" width="25" height="25"/>
+        <image name="Speaker" width="25" height="25"/>
         <image name="ToOfficers" width="25" height="25"/>
         <image name="YourRights" width="25" height="25"/>
     </resources>
