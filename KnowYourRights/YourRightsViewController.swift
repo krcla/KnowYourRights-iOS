@@ -40,12 +40,14 @@ class YourRightsViewController: UIViewController, UIWebViewDelegate, UIPickerVie
         for i in 0..<localeData.count {
             if (locale.hasPrefix(localeData[i])) { return pickerData[i] }
         }
-        return "" // This shouldn't happen.
+        return pickerData[0]  // English for Unsupported locale.
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // 1. pickerData and localeData must match.
+        // 2. pickerData[0] should be the default locale (English).
         pickerData = ["English", "Español", "한국어", "Português", "中文", "Kreyòl Ayisyen"]
         localeData = ["en", "es", "ko", "pt", "zh", "ht"]
         languagePicker.delegate = self
