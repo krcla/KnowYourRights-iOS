@@ -15,7 +15,6 @@ class YourRightsViewController: UIViewController, UIWebViewDelegate, UIPickerVie
     @IBOutlet weak var languagePicker: UIPickerView!
 
     var locale: String = ""
-    var localeChanged: Bool = false
     var pickerData: [String] = [String]()
     var localeData: [String] = [String]()
 
@@ -33,7 +32,6 @@ class YourRightsViewController: UIViewController, UIWebViewDelegate, UIPickerVie
 
     func changeLocale(_ toLocale: String!) {
         locale = toLocale
-        localeChanged = true
         UserDefaults.standard.set(locale, forKey: "locale")
     }
 
